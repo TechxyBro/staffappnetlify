@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  <title>ExeParadise - Developer Applications</title>
+  <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="ExeParadise - Developer Application">
+    <meta property="og:description" content="Welcome to ExeParadise, your ultimate Minecraft server community! Join us for exciting gameplay, build collaborations, and connect with fellow Minecraft enthusiasts.">    ">
+    <meta property="og:thumbnail" content="image.png" >
+</head>
+<body>
+  <div class="form-container">
+    <!-- Header -->
+    <h1 style="font-family: 'Minecraft', sans-serif; color: white; text-shadow: 0px 2px 0px #000000a2;">ExeParadise Developer Applications</h1>
+    <p style="color: white;">Fill out this form to apply for a developer role in ExeParadise.</p>
+
+    <!-- Updated Netlify form setup -->
+    <form name="developer-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+      <input type="hidden" name="form-name" value="developer-application">
+      <input type="text" name="bot-field" style="display:none;">
+
+      <!-- Form fields with additional questions -->
+      <label for="discordUsername">Discord Username:</label>
+      <input type="text" id="discordUsername" name="discordUsername" required placeholder="e.g., techxy_1">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required min="13" placeholder="Your age">
+      
+      <label for="experience">Previous Development Experience:</label>
+      <textarea id="experience" name="experience" rows="4" required placeholder="Describe your experience"></textarea>
+      
+      <label for="skills">Technical Skills:</label>
+      <textarea id="skills" name="skills" rows="3" required placeholder="List relevant technical skills"></textarea>
+
+      <!-- New questions -->
+      <label for="availability">Availability (hours per week):</label>
+      <input type="number" id="availability" name="availability" required min="1" max="40" placeholder="e.g., 10">
+
+      <label for="preferredProjects">Preferred Types of Projects:</label>
+      <textarea id="preferredProjects" name="preferredProjects" rows="3" required placeholder="e.g., Plugin development, server setup, etc."></textarea>
+
+      <label for="motivation">Why do you want to join ExeParadise?</label>
+      <textarea id="motivation" name="motivation" rows="4" required placeholder="Explain your motivation"></textarea>
+
+        <label for="debugging">How would you approach debugging a skript that isn't working as intended?</label>
+        <textarea id="debugging" name="debugging" placeholder="Describe your debugging process..." required></textarea>
+    
+        <label for="optimization">What steps would you take to optimize the performance of a Minecraft plugin?</label>
+        <textarea id="optimization" name="optimization" placeholder="Outline your optimization strategies..." required></textarea>
+    
+        <label for="bugFixExample">Explain a time when you faced a significant bug in a project. How did you identify and fix it?</label>
+        <textarea id="bugFixExample" name="bugFixExample" placeholder="Share your experience with bug fixing..." required></textarea>
+    
+        <label for="dataStorage">If you were asked to implement a feature that required storing user data, what would be your approach?</label>
+        <textarea id="dataStorage" name="dataStorage" placeholder="Discuss your data storage approach..." required></textarea>
+    
+        <label for="skriptFile">Please provide your own created skript file (optional):</label>
+        <input type="file" id="skriptFile" name="skriptFile" accept=".js, .py, .java, .txt">
+
+        <label for="pluginExperience">What is your experience with developing Minecraft plugins? Please provide details about any plugins you have created.</label>
+        <textarea id="pluginExperience" name="pluginExperience" placeholder="Describe your experience..." required></textarea>
+    
+        <label for="challengingProblem">Describe a challenging problem you encountered while working on a Minecraft server. How did you resolve it?</label>
+        <textarea id="challengingProblem" name="challengingProblem" placeholder="Share the problem and your solution..." required></textarea>
+    
+        <label for="serverCrash">How would you handle a situation where a plugin you developed causes server crashes? What steps would you take to debug and fix the issue?</label>
+        <textarea id="serverCrash" name="serverCrash" placeholder="Explain your debugging process..." required></textarea>
+    
+        <label for="performanceOptimization">What techniques do you use for optimizing the performance of a Minecraft server?</label>
+        <textarea id="performanceOptimization" name="performanceOptimization" placeholder="List your optimization techniques..." required></textarea>
+    
+        <label for="stayUpdated">How do you stay updated with the latest changes in Minecraft modding and plugin development?</label>
+        <textarea id="stayUpdated" name="stayUpdated" placeholder="Describe your methods for staying updated..." required></textarea>
+    
+        <label for="newGameMechanic">If given the task to implement a new game mechanic in Minecraft, what would you choose and how would you approach it?</label>
+        <textarea id="newGameMechanic" name="newGameMechanic" placeholder="Discuss your proposed mechanic..." required></textarea>
+        <label for="skillsContribution">What specific skills or expertise do you bring that could benefit the ExeParadise server?</label>
+        <textarea id="skillsContribution" name="skillsContribution" placeholder="Describe your skills..." required></textarea>
+    
+        <label for="growthDevelopment">How do you envision contributing to the growth and development of the ExeParadise community?</label>
+        <textarea id="growthDevelopment" name="growthDevelopment" placeholder="Share your vision..." required></textarea>
+    
+        <label for="userExperience">What ideas do you have for enhancing the user experience on our Minecraft server?</label>
+        <textarea id="userExperience" name="userExperience" placeholder="Discuss your ideas..." required></textarea>
+    
+        <label for="communityEngagement">How would you approach community engagement and communication among players on ExeParadise?</label>
+        <textarea id="communityEngagement" name="communityEngagement" placeholder="Explain your approach..." required></textarea>
+    
+        <label for="newEventFeature">If you were tasked with creating a new event or feature for the server, what would it be and why?</label>
+        <textarea id="newEventFeature" name="newEventFeature" placeholder="Describe your event/feature..." required></textarea>
+    
+        <label for="positiveEnvironment">What measures would you take to ensure a positive and inclusive environment for all players on the ExeParadise server?</label>
+        <textarea id="positiveEnvironment" name="positiveEnvironment" placeholder="Discuss your measures..." required></textarea>
+
+        <!-- Submit button -->
+      <button type="submit">Submit Application</button>
+
+    <!-- Footer with copyright and credits --><br>
+    <footer>
+      <p style="color: white;">&copy; Copyright 2024 ExeParadise</p>
+      <p>Made with ❤️ by TechxyBro</p>
+    </footer>
+  </div>
+</body>
+</html>

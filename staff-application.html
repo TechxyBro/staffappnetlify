@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  <title>ExeParadise - Staff Applications</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="ExeParadise - Staff Application">
+  <meta property="og:description" content="Welcome to ExeParadise, your ultimate Minecraft server community! Join us for exciting gameplay, build collaborations, and connect with fellow Minecraft enthusiasts.">
+  <meta property="og:image" content="https://yourwebsite.com/path/to/image.png">
+</head>
+<body>
+  <div class="form-container">
+    <!-- Header -->
+    <h1 style="font-family: 'Minecraft', sans-serif; color: white; text-shadow: 0px 2px 0px #000000a2;">ExeParadise Staff Applications</h1>
+    <p style="color: white;">Fill out this form to apply for a staff role in ExeParadise.</p>
+
+    <!-- Updated Netlify form setup -->
+    <form name="staff-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+      <input type="hidden" name="form-name" value="staff-application">
+      <input type="text" name="bot-field" style="display:none;">
+
+      <!-- Form fields -->
+      <label for="discordUsername">Discord Username:</label>
+      <input type="text" id="discordUsername" name="discordUsername" required placeholder="e.g., techxy_1">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required min="13" placeholder="Your age">
+      
+      <label for="availability">Availability (hours per week):</label>
+      <input type="number" id="availability" name="availability" required min="1" max="40" placeholder="e.g., 10">
+
+      <label for="motivation">Why do you want to join ExeParadise as a staff member?</label>
+      <textarea id="motivation" name="motivation" rows="4" required placeholder="Explain your motivation"></textarea>
+
+      <label for="communityEngagement">How would you approach community engagement and communication among players on ExeParadise?</label>
+      <textarea id="communityEngagement" name="communityEngagement" placeholder="Explain your approach..." required></textarea>
+
+      <label for="userExperience">What ideas do you have for enhancing the user experience on our Minecraft server?</label>
+      <textarea id="userExperience" name="userExperience" placeholder="Discuss your ideas..." required></textarea>
+
+      <label for="positiveEnvironment">What measures would you take to ensure a positive and inclusive environment for all players on the ExeParadise server?</label>
+      <textarea id="positiveEnvironment" name="positiveEnvironment" placeholder="Discuss your measures..." required></textarea>
+
+      <label for="newEventFeature">If you were tasked with creating a new event or feature for the server, what would it be and why?</label>
+      <textarea id="newEventFeature" name="newEventFeature" placeholder="Describe your event/feature..." required></textarea>
+
+      <!-- Submit button -->
+      <button type="submit">Submit Application</button>
+
+      <!-- Footer with copyright and credits -->
+      <br>
+      <footer>
+        <p style="color: white;">&copy; Copyright 2024 ExeParadise</p>
+        <p>Made with ❤️ by TechxyBro</p>
+      </footer>
+    </form>
+  </div>
+</body>
+</html>

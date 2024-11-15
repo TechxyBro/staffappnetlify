@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(135deg, #f2f2f2, #e0e0e0), url(images/globalrules-modified.png);
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Thank you container styling */
+        .thank-you-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Message styling */
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* Button styling */
+        .home-button {
+            background-color: #2980b9; /* Button color */
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-button:hover {
+            background-color: #1c6691;
+            transform: translateY(-2px);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer p {
+            margin: 0 0;
+        }
+
+        /* Footer link styling */
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links a:hover {
+            color: #1c6691;
+        }
+
+        .footer-links i {
+            margin-right: 5px; /* Spacing between icon and text */
+        }
+
+        footer p:last-child {
+            color: #333;
+            font-weight: bold;
+        }       
+    </style>
+</head>
+<body>
+        
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>Your application has been submitted successfully.</p>
+        <p>We appreciate your interest in joining the ExeParadise community!</p>
+        <a href="index.html" class="home-button">Back to Home</a>
+        <footer>
+                <p>&copy; Copyright 2024 <a href="https://discord.theexe.fun">ExeParadise</a></p>
+            <p>Made with ❤️ by TechxyBro</p>
+        </footer>
+    </div>
+</body>
+</html>

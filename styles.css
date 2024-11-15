@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4A90E2, #8E44AD);
+    color: #333;
+    padding: 20px;
+    background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(images/discovery-modified.webp);
+  }
+  
+  /* Form container styling */
+  .form-container {
+    background-color: transparent;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header styling */
+  h1 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  
+  /* Label styling */
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  /* Input and textarea styling */
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #8E44AD;
+    outline: none;
+    box-shadow: 0 0 5px rgba(142, 68, 173, 0.2);
+  }
+  
+  /* Textarea specific styling */
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Submit button styling */
+  button {
+    margin-top: 25px;
+    padding: 12px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    border: 2px solid black;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer p:last-child {
+    color: white;
+  }
+  

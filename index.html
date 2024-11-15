@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  <title>ExeParadise - Select Your Position</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="ExeParadise - Applications">
+  <meta property="og:description" content="Join the ExeParadise community! Apply for a position as Staff or Developer. Our application process ensures that only the best candidates join our team. Read the rules and submit your application today!">
+  <meta property="og:image" content="https://yourwebsite.com/path/to/image.png">
+</head>
+<body>
+  <div class="home-container">
+    <h1 class="title">Welcome to ExeParadise</h1>
+    <p class="description" style="color: white;">Please select your position:</p>
+
+    <div class="position-selection">
+      <a href="staff-application.html" class="position-button">STAFF</a>
+      <a href="developer-application.html" class="position-button">DEVELOPER</a>
+    </div>
+
+    <!-- Centered Rules Section -->
+    <div class="rules-section">
+      <h2 class="rules-title" style="color: white;">Application Rules</h2>
+      <ul class="rules-list">
+        <li>Each applicant can only submit one application per week.</li>
+        <li>All applications must be filled out completely and honestly. (NO AI)</li>
+        <li>Applicants must be at least 13 years old.</li>
+        <li>Respect the community and other applicants throughout the process.</li>
+        <li>Provide relevant experience and skills related to the position.</li>
+        <li>Inappropriate content will result in immediate disqualification.</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p style="color: white;">&copy; Copyright 2024 ExeParadise</p>
+      <p>Made with ❤️ by TechxyBro</p>
+    </footer>
+  </div>
+
+  <style>
+    body {
+      background-color: #1a1a1a; /* Dark background */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+      animation: fadeIn 1s ease-in; /* Fade in animation for the body */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .home-container {
+      text-align: center;
+    }
+
+    .title {
+      font-family: 'Minecraft', sans-serif; 
+      color: white; 
+      text-shadow: 0px 2px 0px #000000a2;
+      animation: slideIn 1s ease; /* Slide in animation for the title */
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .description {
+      margin: 10px 0;
+      animation: fadeInUp 1s ease; /* Fade in up animation for the description */
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .position-selection {
+      margin-top: 20px;
+    }
+
+    .position-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      background-color: #ff5722; /* Orange color */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+      animation: buttonFadeIn 1s ease; /* Fade in animation for buttons */
+    }
+
+    @keyframes buttonFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .position-button:hover {
+      background-color: #e64a19; /* Darker orange on hover */
+      transform: scale(1.05); /* Slight scale effect on hover */
+    }
+
+    .rules-section {
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+      border-radius: 10px;
+      padding: 20px;
+      width: 80%; /* Width of the section */
+      max-width: 600px; /* Maximum width */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+      display: flex; /* Flexbox for centering */
+      flex-direction: column; /* Column direction */
+      align-items: center; /* Center items horizontally */
+      justify-content: center; /* Center items vertically */
+      margin-left: auto; /* Center the section */
+      margin-right: auto; /* Center the section */
+    }
+
+    .rules-title {
+      color: #ff5722; /* Title color */
+      margin-bottom: 10px;
+      font-size: 1.5em;
+      text-align: center; /* Center title */
+    }
+
+    .rules-list {
+      list-style: disc;
+      padding-left: 20px;
+      text-align: left; /* Left align the list */
+      color: white; /* List text color */
+    }
+
+    footer {
+      margin-top: 20px;
+    }
+  </style>
+</body>
+</html>
